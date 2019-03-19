@@ -10,6 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
+                which docker
                 //singularity exec Singularity.simg python -V
             }
         }
