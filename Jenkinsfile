@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                which singularity
+                uname -a
                 //singularity build Singularity.simg Singularity
             }
         }
