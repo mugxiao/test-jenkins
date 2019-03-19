@@ -3,8 +3,7 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps 
-            {
+            steps {
                 which singularity
                 //singularity build Singularity.simg Singularity
             }
