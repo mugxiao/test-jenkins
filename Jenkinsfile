@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                singularity build Singularity.simg Singularity
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                singularity exec Singularity.simg python -V
             }
         }
         stage('Deploy') {
